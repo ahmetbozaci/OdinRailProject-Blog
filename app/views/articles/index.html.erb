@@ -2,8 +2,14 @@
 <ul>
 <% @articles.each do |article| %>
   <li>
+    <a href="<%= article_path(article)%>">
+      <%= "TİTLE: #{article.title}" %>
+    </a>
+  </li>
+  
+  <li>
     <a href="/articles/<%= article.id %>">
-      <%= "TİTLE: #{article.title}" %><br>
+      <%= "TİTLE: #{article.title}" %>
     </a>
   </li>
 <% end %>
