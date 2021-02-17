@@ -2,8 +2,9 @@
 <ul>
 <% @articles.each do |article| %>
   <li>
-    <%= "TİTLE: #{article.title}" %><br>
-    <%= "BODY: #{article.body}" %><br>
+    <a href="/articles/<%= article.id %>">
+      <%= "TİTLE: #{article.title}" %><br>
+    </a>
   </li>
 <% end %>
 </ul>
